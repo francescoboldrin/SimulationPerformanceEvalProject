@@ -21,16 +21,14 @@ import matplotlib.lines as mlines
 from ContagionExecutive import ContagionExecutive
 from HyperEdge import Hyperedge
 from HyperGraph import HyperGraph
-from InputParser import ParseInput
 from HyperGraphGenerator import HyperGraphGenerator
-from NoiseGenerator import NoiseGenerator
 from TheoricalSimulator import TheoricalSimulator
 
 DEBUG = False
 
 
-def load_hypergraph(FileReader):
-    return ParseInput(FileReader)
+# def load_hypergraph(FileReader):
+#     return ParseInput(FileReader)
 
 def print_result(average_func, max_func, min_func):
     mean_average = np.mean(average_func)
